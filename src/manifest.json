@@ -1,5 +1,5 @@
 {
-  "name": "new-tab-page",
+  "name": "domotz_chrome_extension",
   "description": "A Vue.js web extension",
   "version": 0.1,
   "manifest_version": 2,
@@ -20,6 +20,6 @@
     "newtab": "tab/tab.html"
   },
   "permissions": [
-    "storage"
+    "storage", "alarms"
   ]
 }
