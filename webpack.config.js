@@ -22,6 +22,7 @@ const config = {
   resolve: {
     extensions: ['.js', '.vue'],
   },
+  devtool: 'source-map',
   module: {
     rules: [
       {

@@ -12,14 +12,7 @@
     "default_popup": "popup/popup.html"
   },
   "background": {
-    "scripts": [
-      "background.js"
-    ]
+    "scripts": ["background.js"]
   },
-  "chrome_url_overrides": {
-    "newtab": "tab/tab.html"
-  },
-  "permissions": [
-    "storage", "alarms"
-  ]
+  "permissions": ["storage", "alarms"]
 }

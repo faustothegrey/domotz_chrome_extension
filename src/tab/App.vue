@@ -46,6 +46,7 @@ export default {
     }
   },
   mounted() {
+    console.log("mounted called on tab")
     axios.get(
       "https://icanhazdadjoke.com/",
       { 'headers': { 'Accept': 'application/json' } }
