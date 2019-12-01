@@ -39,8 +39,7 @@ function helloWorld (data) {
         result.key.length +
         ')'
     )
-    currentStorage = result.key
-
+    
     for (let i = 0; i < result.key.length; i++) {
       currentStorage.push(result.key[i])
     }
