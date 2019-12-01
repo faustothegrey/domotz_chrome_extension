@@ -1,6 +1,6 @@
 <template>
 <div>
-    <p>Hello Domotz!!! {{ cane }} </p>
+    <p>Hello Domotz!!! {{ events }} </p>
 </div>
 </template>
 
@@ -9,7 +9,7 @@ export default {
 
     data() {
         return {
-            cane: "no cane"
+            events: []
         }
     },
     created() {
@@ -23,13 +23,12 @@ export default {
     mounted() {
         console.log("On mount has been called ")
         chrome.browserAction.setBadgeText({
-            text: '4'
+            text: ''
         })
         chrome.storage.local.get(['key'], (result) => {
             console.log('Value currently is ' + result.key);
-            this.cane = result.key
+            this.events = result.key
         });
-        // this.cane = 'mounted cane'
     }
 }
 </script>
