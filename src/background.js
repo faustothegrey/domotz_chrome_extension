@@ -1,6 +1,7 @@
 const axios = require('axios')
 
 const CONTACT_URL = 'http://batman:5555' // 'http://localhost:8080/events/updates'
+// const CONTACT_URL = 'http://localhost:5555'
 
 chrome.runtime.onConnect.addListener(function (port) {
   port.postMessage({ greeting: 'hello' })
@@ -11,6 +12,7 @@ chrome.runtime.onInstalled.addListener(() => {
   // create alarm after extension is installed / upgraded
   chrome.alarms.create('refresh', { periodInMinutes: 1, delayInMinutes: 1 })
 
+  // reintialize local storage
   // chrome.storage.local.set({ key: [] }, function () {})
 })
 
